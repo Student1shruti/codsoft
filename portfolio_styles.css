@@ -1,0 +1,225 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    max-height: fit-content;
+    width: 100%;
+}
+
+#head{
+    width:100%;
+    height: 9vh;
+    position:fixed;
+    background: linear-gradient(135deg , rgba(188, 42, 255, 0.8) 0%,rgb(202, 146, 255) 30%, rgb(233, 190, 246) 55%,rgb(228, 146, 255) 85%,rgba(212, 82, 255, 0.737) 100%);
+}
+
+#portfolio_heading{
+    color: white;
+    font-family: 'Merriweather', serif;
+    margin: 1vh 3% 0%;
+    font-size: 7vh;
+    float:left;
+}
+
+#navigation_bar{
+    width: 55%;
+    height: 9vh;
+    float:right;
+}
+
+.navigation_headings{
+    min-width:16%;
+    max-width: fit-content;
+    padding-top: 2vh;
+    height:7vh;
+    float:left;
+    font-size: 2.2vh;
+    color: rgb(195, 51, 197);
+    font-family: 'Merriweather', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.navigation_headings:hover{
+    background: linear-gradient(0deg, rgba(212, 47, 241, 0.6) 0%, rgba(210, 143, 230, 0.9) 40%, rgb(247, 220, 255) 100%);
+    cursor:pointer;
+    border-bottom: 3px solid rgb(174, 0, 255);
+    box-shadow: 0px 0vh 3vh rgba(188, 42, 255, 0.8);
+}
+
+#full_page{
+min-height: 100vh;
+max-height: fit-content;
+background: linear-gradient(135deg , rgb(248, 201, 255) 0%,rgb(244, 146, 255) 25%,rgba(227, 42, 255, 0.8) 50%,rgb(228, 146, 255) 75%,rgb(245, 201, 255) 100%);
+}
+
+#home{
+    width:90%;
+    height: 90vh;
+    padding:5vh 5%;
+}
+
+#home_intro{
+    height:60vh;
+    width:45%;
+    margin:10% 1%;
+    height: 40vh;
+    float:left;
+}
+
+#my_name{
+    font-size: 6vh;
+    font-family: 'Merriweather', serif;
+    color: rgb(165, 45, 216);
+    transition: text-shadow 1s ease;
+    text-decoration: bold;
+    word-spacing: 0.5vh;
+} 
+
+#my_name:hover{
+    text-shadow: 0vh 0vh 2vh  white;
+}
+
+#web_dev{
+    font-size: 2.5vh;
+    font-family: 'Merriweather', serif;
+    color: rgb(184, 0, 187);
+    transition: font-size 1s ease;
+    text-shadow: 0vh 0vh 1vh white;
+} 
+
+#web_dev:hover{
+    font-size: 3.4vh;
+}
+
+.text_content{
+    line-height: 4vh;
+    font-size: 2.5vh;
+    color: rgb(73, 0, 82);
+    font-family: 'Noto Serif', serif;
+    text-align: left;
+    margin-top:5vh;
+    margin-bottom:4vh;
+    width:90%;
+}
+
+#my_connections{
+    height: 7vh;
+    width:60%;
+    margin-top: 2vh;
+    padding: 1vh;
+}
+
+.my_profile_links{
+    width:14%;
+    height:7vh;
+    margin-right:5%;
+    color:black;
+    font-size: 4vh;
+    border: 2.5px solid rgb(212, 0, 255);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow:inset 1px 1px 2vh black;
+    float: left;
+} 
+
+.my_profile_links:hover{
+    cursor:pointer;
+    box-shadow: 1px 1px 2vh black;
+}
+
+#home_profile_pic{
+    width:30%;
+    height: 50vh;
+    margin:7% 5%;
+    background-position: center;
+    border-radius: 50%;
+    background-size: cover;
+    background-image: url('shruti.jpg');
+    float:left;
+    transition: transform 1s ease;
+}
+
+#home_profile_pic:hover{
+    transform: rotateY(45deg);
+    box-shadow: 2vh 2vh 3vh rgb(140, 0, 183);
+}
+
+.my_portfolio_info{
+    width:90%;
+    min-height: 25vh;
+    max-height: fit-content;
+    padding:2% 5%;
+}
+
+.portfolio_heading{
+    height:10vh;
+    font-size: 4.5vh;
+    font-family: 'PT Serif', serif;
+    color: rgb(67, 0, 80);
+    text-shadow: 0vh 0vh 2vh white;
+}
+
+.portfolio_text{
+    line-height: 4vh;
+    font-size: 2.5vh;
+    margin-left: 2%;
+    color: rgb(75, 0, 82);
+    font-family: 'Noto Serif', serif;
+    text-align: left;
+    margin-bottom:1vh;
+    width:65%;
+}
+
+.skill{
+    margin-bottom: 2vh;
+}
+
+.skill_meter{
+    height: 2vh;
+    width:70%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-left: 2%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.skill_bar{
+    background-color: rgb(242, 0, 255);
+    color:white;
+    font-size: 1.5vh;
+    text-shadow: 0vh 0vh 1vh black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2vh;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
