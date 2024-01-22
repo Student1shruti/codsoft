@@ -1,0 +1,223 @@
+
+@media screen and (max-width:1306px) {
+    
+    #logo img {
+        height: 100px;
+        width: 130px;
+    }
+    #navbar {
+        flex-direction: column;
+        
+    }
+    
+    #navbar ul li a {
+        font-size: 1.7rem;
+        padding: 0px 15px;
+
+    }
+    
+    #home {
+        flex-direction: column;
+        height: 350px;
+        padding: 3px 28px;
+        
+    }
+    #home::before{
+        height:100%;
+    }
+    
+    /* utility classes */
+    .h-primary {
+        font-size: 3.5rem;
+    
+    }
+    
+    .h-primary1 {
+        /* padding: 6px; */
+        font-size: 2.8rem;
+    
+    }
+    
+    #home p {
+        font-size: 1.6rem;
+    }
+    
+    .btn {
+        padding: 4px 8px;
+        font-size: 1.5rem;
+        border-radius: 5px;
+    }
+    
+    #services-container {
+        flex-direction: column;
+        padding: 0px 0px;
+
+    }
+    
+    #services {
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+    
+    }
+    
+    .box {
+        /* float: left;
+        display: block; */
+        width: 33.33%;
+        margin-right: 10px;
+        margin-left: 10px;
+        /* font-size: 25px; */
+        color: black;
+    
+        /* border-radius: 20px; */
+    }
+    
+    .box img {
+        width: 230px;
+        height: 170px;
+        border: 1px solid brown;
+        border-radius: 10px;
+    }
+    
+    .box div {
+        border: 1px solid brown;
+        border-radius: 10px;
+        width:230px;
+        font-size: 1.4rem;
+    }
+    
+    #abouts {
+  flex-wrap: wrap;
+    
+    }
+    #about-us::before {
+        height: 100%;
+    
+    }
+    .aboutus p{
+        font-size: 1.6rem;
+        text-align: center;
+        align-items: center;
+        font-weight: 500;
+    }
+    
+    
+    /* contact section */
+    #contact {
+        position: relative;
+        margin-top:0px;
+    }
+    
+    #contact-box {
+        flex-direction: column;
+    }
+    
+    #contact-box form {
+        width: 50%;
+    
+    }
+    
+    #contact-box label {
+        font-size: 1rem;
+    
+    }
+    
+    #contact-box input,
+    #contact-box textarea {
+        width: 100%;
+        border-radius: 3px;
+        font-size: 1rem;
+    
+    }
+    .btn1 {
+        font-size: 1.2rem;
+        width: 97px;
+    }
+/* popup section */
+.container1{
+    width: 70%;
+    height:70%;
+}
+.popup{
+    width: 275px;
+    visibility: hidden;
+}
+.open-popup{
+    visibility: visible;
+}
+.popup img{
+    width: 80px;
+}
+.popup h2{
+    font-size: 2.1rem;
+}
+.popup button{
+    width: 90%;
+    margin-top: 40px;
+    padding: 10px 0px;
+    font-size: 18px;
+}
+}
+@media screen and (max-width:767px){
+    #navbar ul li a {
+        font-size: 1.25rem;
+        padding: 0px 9px;
+
+    }
+    .h-primary {
+        font-size: 2.6rem;
+    
+    }
+    
+    .h-primary1 {
+        /* padding: 6px; */
+        font-size: 2rem;
+    
+    }
+    #home p {
+        font-size: 1.2rem;
+    }
+    
+    .btn {
+        padding: 4px 8px;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+    #services-container {
+        flex-direction: column;
+        height: 700px;
+    }
+    
+    #services {
+       flex-direction: column;
+       padding: 5px;
+    
+    }
+    .box {
+        width: 27.33%;
+    }
+    
+    .box img {
+        width: 250px;
+        height: 150px;
+        
+    }
+    
+    .box div {
+        width:200px;
+        font-size: 1.1rem;
+    }
+    
+    #contact-box form {
+        width: 80%;
+    
+    } 
+    .aboutus p{
+        font-size: 1.2rem;
+        text-align: center;
+        align-items: center;
+        font-weight: 500;
+    }
+}
+

@@ -1,34 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Fitness Website</title>
+    <link rel="stylesheet" href="/New folder/style.css">
+    <link rel="stylesheet"  href="/New folder/phone1.css">
+
+
 </head>
+
 <body>
-    <div class="calculator">
-        <input type="text" id="displays" readonly>
-        <div class="btn">
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="appendValue('/')">/</button>
-            <button onclick="appendValue('*')">*</button>
-            <button onclick="appendValue('7')">7</button>
-            <button onclick="appendValue('8')">8</button>
-            <button onclick="appendValue('9')">9</button>
-            <button onclick="appendValue('-')">-</button>
-            <button onclick="appendValue('4')">4</button>
-            <button onclick="appendValue('5')">5</button>
-            <button onclick="appendValue('6')">6</button>
-            <button onclick="appendValue('+')">+</button>
-            <button onclick="appendValue('1')">1</button>
-            <button onclick="appendValue('2')">2</button>
-            <button onclick="appendValue('3')">3</button>
-            <button onclick="calculate()">=</button>
-            <button onclick="appendValue('0')">0</button>
-            <button onclick="appendValue('.')">.</button>
+
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo2.jpg" alt="OnlineFitness.com">
         </div>
-    </div>
-    <script src="calculator.js"></script>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Our Services</a></li>
+            <li class="item"><a href="#about-us">About Us</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary">Join Us to Stay Healthy and Fit</h1>
+        <p>A strong fitness website serves as a marketing tool and educates potential clients about your offerings. A
+            super strong website also streamlines your payments and scheduling, so we focus on the fun stuff too.</p>
+        <button class="btn" onclick="func1()">Join Now</button>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary1">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <div>Yoga Classes</div>
+                <br>
+                <img src="y1.jpg" alt="">
+
+            </div>
+            <div class="box">
+                <div> Weekly Gym</div>
+                <br>
+                <img src="y2.jpg" alt="">
+
+            </div>
+            <!-- right box for buttons -->
+            <div class="box">
+                <div>Diet Plan</div>
+                <br>
+                <img src="bd1.jpg" alt="">
+
+            </div>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="about-us">
+        <h1 class="h-primary1 ">About Us</h1>
+        <div id="abouts">
+            <div class="aboutus">
+                <p>
+                    We offer three services which includes Yoga Classes,Weekly Gym and a Diet Plan to stay fit and
+                    healthy.Our Website has health and fitness certifications and results to maintain our client
+                    relibility and trust. So join us on the journey of you to stay fit and healthy. In conclusion our
+                    motive is to make people healthy, fit and stress free from the daily life problems.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary1">Contact Us</h1>
+        <div id="contact-box">
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="form-group">
+                    <label for="age">Age: </label>
+                    <input type="number" name="name" id="age" placeholder="Enter your age">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn1" onclick="openPopup()">Submit</button>
+
+            </form>
+        </div>
+        <div class="container1">
+            <!-- <button type="submit" class="btn1" onclick="openPopup()">Submit</button> -->
+            <div class="popup" id="popup">
+                <img src="tick.jpg">
+                <h2>Thank You!</h2>
+                <p>Your details has been successfully submitted. Thanks!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.OnlineFitness.com. All rights reserved!
+        </div>
+    </footer>
+    <script>
+        let form = document.querySelector("#contact-form");
+        let popup = document.querySelector(".popup");
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            popup.classList.add('open-popup');
+        });
+
+        function closePopup() {
+            popup.classList.remove('open-popup');
+
+        }
+        function func1(){
+            alert("Please fill Your Contact details.")
+
+        }
+    </script>
 </body>
+
 </html>
